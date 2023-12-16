@@ -10,7 +10,7 @@ Before continuing, ensure the requirements are met, and that python is installed
 To run the bash script, cd to where this repo is downloaded, then run "./4chan-download.sh"
 The script will then ask for the thread URL and the desired folder name. 
 The script will then run inb4404.py, which will proceed to download all media within the specified thread. It will keep checking the thread for new posts until interrupted. To interrupt the python script, do CTRL+C in linux.
-The python script will end, and return back to the bash script, where the downloaded folder will be renamed as specified at the start of the script. The final folder name will be "<thread ID> - <specified name>" this helps with organization if downloading many 4chan threads.
+The python script will end, and return back to the bash script, where the downloaded folder will be renamed as specified at the start of the script. The final folder name will be "*thread ID* - *specified name*" this helps with organization if downloading many 4chan threads.
 The bash script checks to see if any folders with the thread ID already exist. This is to avoid downloading duplicates of the same thread. If the thread ID is detected as already existing, the script will ask if you want to merge the newly-downloaded folder with the existing folder. This is normally recommended.
 
 I encourage you to play around with the bash script to meet your specific needs.
