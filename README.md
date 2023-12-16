@@ -1,13 +1,26 @@
 4chan-downloader
 ================
 
-Python script to download all images/webms of a 4chan thread
+Bash / Python script to download all images/webms of a 4chan thread
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/exceen)
+I modified the main branch of this project, adding a bash script to simplify the download process. 
+
+Before continuing, ensure the requirements are met, and that python is installed on your system. 
+
+To run the bash script, cd to where this repo is downloaded, then run "./4chan-download.sh"
+The script will then ask for the thread URL and the desired folder name. 
+The script will then run inb4404.py, which will proceed to download all media within the specified thread. It will keep checking the thread for new posts until interrupted. To interrupt the python script, do CTRL+C in linux.
+The python script will end, and return back to the bash script, where the downloaded folder will be renamed as specified at the start of the script. The final folder name will be "<thread ID> - <specified name>" this helps with organization if downloading many 4chan threads.
+The bash script checks to see if any folders with the thread ID already exist. This is to avoid downloading duplicates of the same thread. If the thread ID is detected as already existing, the script will ask if you want to merge the newly-downloaded folder with the existing folder. This is normally recommended.
+
+I encourage you to play around with the bash script to meet your specific needs.
+
+DISCLAIMER: I am a noob script kiddie, do not expect this program to be perfect. I used ChatGPT as a resource when programming this, so I am sure there are mistakes. Use at your own risk.
 
 ### Download Script ###
 
 The main script is called inb4404.py and can be called like this: `python3 inb4404.py [thread/filename]`
+
 
 ```
 usage: inb4404.py [-h] [-c] [-d] [-l] [-n] [-r] [-t] thread/filename
